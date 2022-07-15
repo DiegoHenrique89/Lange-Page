@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+}
+/*Parte do Menu*/
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+body{
+    background: linear-gradient(#2c3156,#1b1a33);/*Cor de fundo */
+    overflow-y: hidden;
+}
+nav{
+    display: flex; /*Centralizar os arquivos do menu*/
+    justify-content: space-between; /*Direcionando o menu para o lado direito*/
+    align-items: center; /*menu abaixo da borda*/
+    padding-top: 25px;
+}
+.logo{
+   width: 170px; /*Reduzindo o tamanho da logo*/
+}
+nav ul{
+    list-style: none;/*Tirando o efeito das bolinhas do menu*/
+    display: flex; /*Alinhando menu*/
+}
+nav ul  li{
+    padding: 0 15px;/*Espaço entre as opções do menu*/
+    font-size: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;/*removendo o sublinhado do menu*/
+}
+nav ul li a:hover{
+    color: red;
+}
+section{ /*Expandido a tela da sessão*/
+    display: flex;
+    align-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+/*Parte do texto*/
+.section_text{
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+.section_text h1{
+    font-size: 5rem;
+    margin-top: 10px;
+    text-shadow: 3px 0 red,-3px 0 red,0 3px red,0 -3px red, 2px 2px red,-2px -2px red,2px -2px red,-2px 2px red ;/*Cor da borda da letra*/
+}
+.section_text p{
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 400;
+    text-align: left;
+}
+.section_text div{
+    text-align: left; /*Botões a esquerda*/
+}
+.section_text div button{
+    font-size: 22px; /*tamanho do botão*/
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+    font-weight: 300;
+}
+.section_text div button i{
+    font-size: 38px;
+    margin-right: 10px;
+}
+.section_text div button:first-child{
+    display: inline-flex;
+    align-items: center;
+}
+.section_text div button:last-child{
+    border: 1px solid white; /*Efeito da borda*/
+    border-radius: 50px;/*Arendodando a borda */
+    padding: 20px;
+}
+.section_img{
+    position: absolute;/*Centralizando a imagem*/
+    right: -50px;/* Voltando a imagem*/
+    bottom: -40px;
+}
+.section_img img{
+    width: 750px; /*Diminuindo o tamamnho do imagem*/
+}
